@@ -1,0 +1,20 @@
+<%- include("./partials/header") %>
+
+<h1 id="glowh1" class="glow">Mailing List</h1>
+
+<div class="textWindow">
+  <p> Sign up for my Mailing List and...</p>
+  <p> Get the latest news about new music projects, releases, Tour Dates and collaborations. Be notified when new educational content becomes available.</p>
+</div>
+
+<div class="textWindow">
+  <form action="/mailingList" method="POST">
+    <input type="text" id="nameInput" name="name" placeholder="First and Last Name">
+    <input type="email" id="emailInput" name="email" placeholder="your_email@email.com">
+  	<button class="btn btn-md btn-primary">
+  		SIGN UP
+  	</button>
+  </form>
+</div>
+
+<%- include("./partials/footer") %>
